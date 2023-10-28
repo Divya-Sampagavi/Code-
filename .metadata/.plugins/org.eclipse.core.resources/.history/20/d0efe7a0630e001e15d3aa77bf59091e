@@ -1,0 +1,18 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelReader {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		FileInputStream file = new FileInputStream("./TestData/TestData.xlsx");
+		XSSFWorkbook wb = new XSSFWorkbook();
+		XSSFSheet sh = wb.getSheet("Sheet1");
+		
+				
+	}
+}
